@@ -5,13 +5,13 @@
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .calculadora {
-    margin-top: 50px;
     background-color: #1d1b1e;
     padding: 20px 5px;
     border-radius: 10px;
@@ -21,7 +21,6 @@ body {
     height: 50px;
     width: 100%;
     background-color: #1d1b1e;
-    border-radius: 10px;
 }
 
 .display p {
@@ -32,7 +31,6 @@ body {
     color: honeydew;
 }
 
-
 .botao {
     width: 40px;
     height: 40px;
@@ -42,6 +40,12 @@ body {
     transition: all .5s;
     background-color: #a49092;
     color: white;
+    font-size: 15px;
+}
+
+#bt-igual{
+    background-color: #f5874c;
+    height: 80px;
 }
 
 .operacao {
@@ -49,21 +53,131 @@ body {
     color: #1d1b1e;
 }
 
-.bt-igual {
-    background-color: #f5874c;
-}
-
 .botao:hover {
     background-color: #63425f;
-    border: solid #63425f 1px;
+    border: solid #63425f 2px;
 }
 
 .operacao:hover {
     background-color: #ffc248;
-    border: solid #ffc248 1px;
+    border: solid #ffc248 2px;
 }
 
 .bt-igual:hover {
     background-color: #ff7e39;
-    border: solid #ff7e39 1px;
+    border: solid #ff7e39 2px;
 }
+
+@media (min-height: 37em) {
+    .display {
+        height: 60px;
+    }
+    .display p {
+        font-size: 25px;
+    }
+    .botao {
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+    #bt-igual{
+        height: 100px;
+    }
+} /* 592px */
+
+@media (min-height: 41em) {
+    .display {
+        height: 70px;
+    }
+    .display p {
+        font-size: 30px;
+    }
+    .botao {
+        width: 60px;
+        height: 60px;
+        margin: 3px;
+        border-radius: 30px;
+        font-size: 25px;
+    }
+    #bt-igual{
+        height: 120px;
+    }
+} /* 656px */
+
+@media (min-height: 47em) {
+    .display {
+        height: 80px;
+    }
+    .display p {
+        font-size: 35px;
+    }
+    .botao {
+        width: 70px;
+        height: 70px;
+        margin: 4px;
+        border-radius: 35px;
+        font-size: 30px;
+    }
+    #bt-igual{
+        height: 140px;
+    }
+} /* 752px */
+
+@media (min-height: 68em) {
+    .display {
+        height: 90px;
+    }
+    .display p {
+        font-size: 40px;
+    }
+    .botao {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        border-radius: 40px;
+        font-size: 35px;
+    }
+    #bt-igual{
+        height: 160px;
+    }
+} /* 1088px */
+
+@media (min-height: 82em) {
+    .display {
+        height: 100px;
+    }
+    .display p {
+        font-size: 45px;
+    }
+    .botao {
+        width: 90px;
+        height: 90px;
+        margin: 6px;
+        border-radius: 45px;
+        font-size: 40px;
+    }
+    #bt-igual{
+        height: 180px;
+    }
+} /* 1312px */
+
+@media (min-height: 100em) {
+    .display {
+        height: 110px;
+    }
+    .display p {
+        font-size: 50px;
+    }
+    .botao {
+        width: 100px;
+        height: 100px;
+        margin: 7px;
+        border-radius: 50px;
+        font-size: 50px;
+    }
+    #bt-igual{
+        height: 200px;
+    }
+} /* 1600px */
