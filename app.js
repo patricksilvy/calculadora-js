@@ -38,6 +38,8 @@ const calcularResultado = () => {
         const replaceX = original.replace('x', '*')
         const replaceY = replaceX.replace('÷', '/')
         const resultado = eval(replaceY).toFixed(2).toString()
-        display.innerHTML = resultado
+        resultado.split('.')[1] === '00' ?
+            display.innerHTML = resultado.split('.')[0].toString() : 
+            display.innerHTML = resultado
     }
 }
